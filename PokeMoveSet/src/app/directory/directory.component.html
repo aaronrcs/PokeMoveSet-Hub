@@ -1,0 +1,224 @@
+<h2> Welcome to the Pokemon Move-set Hub</h2>
+
+<ul>
+
+    <li> Hey there! Below you will find a list of Pokemon with their name, type(s), recommended move-sets and reasoning for choosing those move-sets.</li>
+    <br>
+    <li>If your move-sets for your Pokemon are different, use the input fields below to display the move-sets for your Pokemon!</li>
+    <br>
+    <li>You may also use the search bar to search for a specific Pokemon! Enjoy!</li>
+</ul>
+
+<form id="pokemon-filter">
+  <label>Filter Pokemon by name:</label>
+  <input type="text" name="searchTerm" [ngModelOptions] = "{standalone: true}" [(ngModel)]="searchTerm" />
+
+</form>
+
+<ul id="pokemon-listing">
+  <li *ngFor="let pokemon of listOfPokemon | pokemonFilter:searchTerm">
+    
+    <div class="single-pokemon">
+      <!-- check the type of each pokemon and adds a color to the corresponding type -->
+      
+      <div>
+
+      </div>
+      <span *ngIf="pokemon.type === 'fire' ">
+          <span style="background-color:red;">{{pokemon.type}}</span>
+      </span>
+      <span *ngIf="pokemon.type2 === 'fire' ">
+          <span style="background-color:red;">{{pokemon.type2}}</span>
+      </span>
+
+      <span *ngIf="pokemon.type === 'water' ">
+          <span style="background-color:blue;">{{pokemon.type}}</span>
+      </span>
+      <span *ngIf="pokemon.type2 === 'water' ">
+          <span style="background-color:blue;">{{pokemon.type2}}</span>
+      </span>
+
+      <span *ngIf="pokemon.type === 'grass' ">
+          <span style="background-color:green;">{{pokemon.type}}</span>
+      </span>
+      <span *ngIf="pokemon.type2 === 'grass' ">
+          <span style="background-color:green;">{{pokemon.type2}}</span>
+      </span>
+
+      <span *ngIf="pokemon.type === 'flying'">
+          <span style="background-color:lightskyblue;">{{pokemon.type}}</span>
+      </span>
+      <span *ngIf="pokemon.type2 === 'flying'">
+          <span style="background-color:lightskyblue;">{{pokemon.type2}}</span>
+      </span>
+
+      <span *ngIf="pokemon.type === 'poison' ">
+          <span style="background-color:purple;">{{pokemon.type}}</span>
+      </span>
+      <span *ngIf="pokemon.type2 === 'poison' ">
+          <span style="background-color:purple;">{{pokemon.type2}}</span>
+      </span>
+
+      <span *ngIf="pokemon.type === 'normal' ">
+          <span style="background-color:gray;">{{pokemon.type}}</span>
+      </span>
+      <span *ngIf="pokemon.type2 === 'normal' ">
+          <span style="background-color:gray;">{{pokemon.type2}}</span>
+      </span>
+
+      <span *ngIf="pokemon.type === 'electric' ">
+          <span style="background-color:rgb(230, 230, 89);">{{pokemon.type}}</span>
+      </span>
+      <span *ngIf="pokemon.type2 === 'electric' ">
+          <span style="background-color:rgb(230, 230, 89);">{{pokemon.type2}}</span>
+      </span>
+
+      <span *ngIf="pokemon.type === 'ice' ">
+          <span style="background-color:lightblue;">{{pokemon.type}}</span>
+      </span>
+      <span *ngIf="pokemon.type2 === 'ice' ">
+          <span style="background-color:lightblue;">{{pokemon.type2}}</span>
+      </span>
+
+      <span *ngIf="pokemon.type === 'fighting' ">
+          <span style="background-color:rgb(138, 52, 46);">{{pokemon.type}}</span>
+      </span>
+      <span *ngIf="pokemon.type2 === 'fighting' ">
+          <span style="background-color:rgb(138, 52, 46);">{{pokemon.type2}}</span>
+      </span>
+
+      <span *ngIf="pokemon.type === 'ground' ">
+          <span style="background-color:rgb(190, 154, 107);">{{pokemon.type}}</span>
+      </span>
+      <span *ngIf="pokemon.type2 === 'ground' ">
+          <span style="background-color:rgb(190, 154, 107);">{{pokemon.type2}}</span>
+      </span>
+
+      <span *ngIf="pokemon.type === 'psychic' ">
+          <span style="background-color:rgb(207, 43, 180);">{{pokemon.type}}</span>
+      </span>
+      <span *ngIf="pokemon.type2 === 'psychic' ">
+          <span style="background-color:rgb(207, 43, 180);">{{pokemon.type2}}</span>
+      </span>
+
+      <span *ngIf="pokemon.type === 'bug' ">
+          <span style="background-color:rgb(69, 146, 86);">{{pokemon.type}}</span>
+      </span>
+      <span *ngIf="pokemon.type2 === 'bug' ">
+          <span style="background-color:rgb(69, 146, 86);">{{pokemon.type2}}</span>
+      </span>
+
+      <span *ngIf="pokemon.type === 'rock' ">
+          <span style="background-color:rgb(75, 62, 26);">{{pokemon.type}}</span>
+      </span>
+      <span *ngIf="pokemon.type2 === 'rock' ">
+          <span style="background-color:rgb(75, 62, 26);">{{pokemon.type2}}</span>
+      </span>
+
+      <span *ngIf="pokemon.type === 'ghost' ">
+          <span style="background-color:rgb(61, 13, 100);">{{pokemon.type}}</span>
+      </span>
+      <span *ngIf="pokemon.type2 === 'ghost' ">
+          <span style="background-color:rgb(61, 13, 100);">{{pokemon.type2}}</span>
+      </span>
+
+      <span *ngIf="pokemon.type === 'dragon' ">
+          <span style="background-color:rgb(73, 62, 224);">{{pokemon.type}}</span>
+      </span>
+      <span *ngIf="pokemon.type2 === 'dragon' ">
+          <span style="background-color:rgb(73, 62, 224);">{{pokemon.type2}}</span>
+      </span>
+
+      <span *ngIf="pokemon.type === 'dark' ">
+          <span style="background-color:rgb(58, 51, 41);">{{pokemon.type}}</span>
+      </span>
+      <span *ngIf="pokemon.type2 === 'dark' ">
+          <span style="background-color:rgb(58, 51, 41);">{{pokemon.type2}}</span>
+      </span>
+
+      <span *ngIf="pokemon.type === 'steel' ">
+          <span style="background-color:rgb(196, 192, 188);">{{pokemon.type}}</span>
+      </span>
+      <span *ngIf="pokemon.type2 === 'steel' ">
+          <span style="background-color:rgb(196, 192, 188);">{{pokemon.type2}}</span>
+      </span>
+
+      <span *ngIf="pokemon.type === 'fairy' ">
+          <span style="background-color:rgb(221, 144, 240);">{{pokemon.type}}</span>
+      </span>
+      <span *ngIf="pokemon.type2 === 'fairy' ">
+          <span style="background-color:rgb(221, 144, 240);">{{pokemon.type2}}</span>
+      </span>
+      
+      <!-- Pokemon Name -->
+      <h3>{{pokemon.name | uppercase}}</h3>
+      <!-- <div (click)="remove($event)" [attr.data-name]="pokemon.name">Delete</div> -->
+
+      <br>
+
+      <h3>Recommended Move-Set:</h3>
+      
+     <ul>Move 1: {{pokemon.m1}}</ul>
+     <ul>Move 2: {{pokemon.m2}}</ul>
+     <ul>Move 3: {{pokemon.m3}}</ul>
+     <ul>Move 4: {{pokemon.m4}}</ul>
+     <p>Reason: {{pokemon.reason}}</p>
+      
+
+    </div>
+  </li>
+</ul>
+<form id="add-pokemon">
+
+    <h1> Add your Pokemon by inputing its name and type(s): </h1>
+    <p>(Please use lower-case letters when inputing the type(s))</p>
+
+  <label>Pokemon Name: </label>
+  <input type="text" [ngModelOptions] = "{standalone: true}" [(ngModel)]="name"/>
+
+  
+  <br>
+
+  <label>Pokemon Type: </label>
+  <input type="text" style="text-transform:lowercase;" [ngModelOptions] = "{standalone: true}" [(ngModel)]="type"/>
+
+  <br>
+
+  <label>Second Type (If any): </label>
+  <input type="text" style="text-transform:lowercase;" [ngModelOptions] = "{standalone: true}" [(ngModel)]="type2"/>
+
+  <br>
+  <hr>
+
+  <h1> Add a recommended move-set for your Pokemon: </h1>
+  <label>Move 1: </label>
+  <input type="text" style="text-transform:lowercase;" [ngModelOptions] = "{standalone: true}" [(ngModel)]="m1"/>
+
+  <br>
+
+  <label>Move 2: </label>
+  <input type="text" style="text-transform:lowercase;" [ngModelOptions] = "{standalone: true}" [(ngModel)]="m2"/>
+
+  <br>
+
+  <label>Move 3: </label>
+  <input type="text" style="text-transform:lowercase;" [ngModelOptions] = "{standalone: true}" [(ngModel)]="m3"/>
+
+  <br>
+
+  <label>Move 4: </label>
+  <input type="text" style="text-transform:lowercase;" [ngModelOptions] = "{standalone: true}" [(ngModel)]="m4"/>
+
+  <br>
+
+  <label>Reasoning: </label>
+  <input type="text" style="height: 50px;" [ngModelOptions] = "{standalone: true}" [(ngModel)]="reason"/>
+
+
+
+  <button type="submit" (click)="fbPostPokemon(name,type,type2,m1,m2,m3,m4,reason)"> Add New Pokemon </button>
+
+
+</form>
+
+

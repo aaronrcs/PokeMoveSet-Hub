@@ -1,0 +1,42 @@
+[
+
+    {
+        "name": "Charmander", "type": "fire", "m1":"ember", "m2":"scratch","m3":"smokescreen","m4":"growl",
+        "reason":"These are great moves to have before evolving!"
+    
+    },
+    {
+        "name": "Charmaleon", "type": "fire", "m1":"dragon rage", "m2":"flame burst","m3":"scary face","m4":"fire fang",
+        "reason":"These are great moves to have before evolving to Charzard. Especially dragon rage, it is really powerful!"
+    },
+    {
+        "name": "Charzard", "type": "fire", "type2":"flying", "m1":"dragon Claw", "m2":"flamethrower","m3":"protect","m4":"wing attack",
+        "reason":"Wing attack is stab and it will help with fighting types. Dragon claw will help with batttling against Dragon types."
+    },
+    {
+        "name": "Squirtle", "type": "water", "m1":"tackle", "m2":"tail whip","m3":"water gun","m4":"withdraw",
+        "reason":"Withdraw will allow squirtle to increase his defense thus allowing it to survive more hits"
+    },
+    {
+        "name": "Wartortle", "type": "water", "m1":"bite", "m2":"protect","m3":"water pulse","m4":"aqua tail",
+        "reason":"The move bite is extrememly helpful when battling psychic and ghost types!"
+    },
+    {
+        "name": "Blastoise", "type": "water", "m1":"brick break", "m2":"protect","m3":"scald","m4":"ice beam",
+        "reason":"Brick break will against ice/rock and steel types. Scald chance of burning a pokemon during battle is awesome!"
+    },
+    {
+        "name": "Bulbasaur", "type": "grass","type2":"poison", "m1":"tackle", "m2":"leech seed","m3":"poison powder","m4":"vine whip",
+        "reason":"Leech seed will enable bulbasaur to always regain health in each turn and poison powerder is great for damage over time!"
+    },
+    {
+        "name": "Ivysaur", "type": "grass", "type2":"poison", "m1":"razor leaf", "m2":"leech seed","m3":"poison powder","m4":"sleep powder",
+        "reason":"Leech seed and poison powder remain for obvious reasons. Razor leaf is strong than vine whip."
+    },
+    {
+        "name": "Venusaur", "type": "grass", "type2":"poison", "m1":"petal blizzard", "m2":"venoshock","m3":"poison powder","m4":"earthquake",
+        "reason":"Earthquake will do well against fire/rock and steel types. And poison powder for that sweet damage over time!"
+    }
+
+
+]
